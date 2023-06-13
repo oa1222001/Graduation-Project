@@ -1,4 +1,4 @@
-const { deleteaccount, editphone, deletecontact, addcontact, deleteguardian, editpassword, addguardian, getContacts, getGuardian } = require('../controllers/user');
+const { deleteaccount, editphone, deletecontact, addcontact, deleteguardian, editpassword, addguardian, getContactsGuardian } = require('../controllers/user');
 const { body } = require('express-validator');
 
 const router = require('express').Router();
@@ -87,8 +87,6 @@ router.delete('/deleteaccount',
         .isLength({ min: 8, max: 100 }),
     deleteaccount)
 
-router.get('/getcontacts', getContacts)
-
-router.get('/getguardian', getGuardian)
+router.get('/getcontactsguardian', getContactsGuardian)
 
 module.exports = router

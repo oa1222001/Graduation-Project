@@ -198,7 +198,7 @@ exports.deleteaccount = async (req, res, next) => {
     res.status(200).json({ message: "done" })
 }
 
-exports.getContacts = async (req, res, next) => {
+exports.getContactsGuardian = async (req, res, next) => {
 
     const { email } = req.user
 
@@ -211,19 +211,5 @@ exports.getContacts = async (req, res, next) => {
         return next({})
     }
 
-    res.status(200).json({ contacts: user.contacts })
-}
-exports.getGuardian = async (req, res, next) => {
-    const { email } = req.user
-
-    const user = await User.findByEmail(email).catch(err => {
-        let error = {}
-        return next(error)
-    })
-
-    if (!user) {
-        return next({})
-    }
-
-    res.status(200).json({ guardian: user.guardian })
+    res.status(200).json({ contacts: user.contacts, guardian: user.guardian })
 }
