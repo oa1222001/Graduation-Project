@@ -20,13 +20,17 @@ The Woman Safety Application utilizes the following technologies:
 
 - Backend Development: Omar Allam has developed the application's backend using Node.js. The backend handles various functionalities, such as processing user data, managing requests, and facilitating communication with external services.
 
-- Flutter App Development: Rahma Eid has developed the mobile application using the Flutter framework. Flutter provides a robust and efficient cross-platform development environment, enabling seamless user experiences on both Android and iOS platforms.
+- Flutter App Development: Rahma Eid has developed the mobile application using the Flutter framework. Flutter provides a robust and efficient cross-platform development environment, enabling seamless user experiences on Android platform.
 
 ## Installation and Setup
 
 To set up the Woman Safety Application locally, follow these steps:
 
-1. Clone the repository from GitHub: git clone https://github.com/oa1222001/Graduation-Project
+1. Clone the repository from GitHub:
+
+```
+git clone https://github.com/oa1222001/Graduation-Project
+```
 
 2. Backend Setup:
 
