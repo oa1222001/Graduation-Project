@@ -266,8 +266,10 @@ exports.accessLocation = async (req, res, next) => {
     return next(error)
   })
 
-  if (!userDoc || !userDoc.dangerToken) {
-    return res.status(400).send("invalid or expired token")
+  if (!userDoc) {
+    if (!userDoc.dangerToken || !isWithinPastSixHours(userDoc.lastDanger)) {
+      return res.status(400).send("invalid or expired token")
+    }
   }
 
 
