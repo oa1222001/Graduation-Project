@@ -115,7 +115,7 @@ exports.signUp = async (req, res, next) => {
                       <table role="presentation" style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
                         <tr>
                           <td align="center" style="padding:40px 0 30px 0;background:#70bbd9;">
-                            <img src="https://assets.codepen.io/210284/h1.png" alt="" width="300" style="height:auto;display:block;" />
+                            <img src="https://media.istockphoto.com/id/1303742901/vector/email-marketing-message-concept.jpg?s=612x612&w=0&k=20&c=qQIuqm_xHVMMN-HWy7it-Mw62oNVppQe2ImmoJP499U=" alt="" width="300" style="height:auto;display:block;" />
                           </td>
                         </tr>
                         <tr>
@@ -165,7 +165,6 @@ exports.signUp = async (req, res, next) => {
 
   let linkForPhone = `${process.env.AWS_LINK + '/auth/phoneverify/' + verifyNumberToken} `
 
-  // link shortner
 
   const vonage = new Vonage({
     apiKey: process.env.VONAGE_KEY,
@@ -357,7 +356,7 @@ exports.forgotPass = async (req, res, next) => {
                       <table role="presentation" style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
                         <tr>
                           <td align="center" style="padding:40px 0 30px 0;background:#70bbd9;">
-                            <img src="https://assets.codepen.io/210284/h1.png" alt="" width="300" style="height:auto;display:block;" />
+                            <img src="https://media.istockphoto.com/id/1303742901/vector/email-marketing-message-concept.jpg?s=612x612&w=0&k=20&c=qQIuqm_xHVMMN-HWy7it-Mw62oNVppQe2ImmoJP499U=" alt="" width="300" style="height:auto;display:block;" />
                           </td>
                         </tr>
                         <tr>
